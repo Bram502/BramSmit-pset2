@@ -5,51 +5,47 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.bwhsm.bramsmit_pset2.InputActivity"
-    android:weightSum="1">
+    android:weightSum="1"
+    tools:context="com.example.bwhsm.bramsmit_pset2.InputActivity">
 
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="25dp"
-        android:layout_marginLeft="10dp"
+        android:padding="15dp"
         android:text="Fill in the words to complete the story!"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
 
     <TextView
-        android:id="@+id/count"
+        android:id="@+id/countView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="120dp"
         android:layout_marginRight="120dp"
-        android:gravity="center" />
+        android:gravity="center"
+        android:text="count" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="1">
 
         <EditText
             android:id="@+id/userInput"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_weight="2.14"
+            android:layout_weight="0.90"
             android:ems="10"
             android:inputType="textPersonName"
-            android:paddingLeft="10dp"
-            android:text="Name"
-            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Small"
-            />
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault" />
 
         <Button
             android:id="@+id/enterButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
             android:text="OK" />
 
     </LinearLayout>
@@ -59,11 +55,5 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center" />
-
-    <TextView
-        android:id="@+id/testText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="TextView" />
 
 </LinearLayout>
